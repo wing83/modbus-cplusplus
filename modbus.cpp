@@ -273,7 +273,7 @@ bool ModBus::setRegisterValue(unsigned short nRegister, unsigned short nValue)
     }
 }
 
-bool ModBus::setRawRegistsValue(unsigned short nStartRegister, unsigned char *dataBuff, int nLen)
+bool ModBus::setRawRegistersValue(unsigned short nStartRegister, unsigned char *dataBuff, int nLen)
 {
     if(NULL == m_ptrDataBuff)
     {
@@ -373,7 +373,7 @@ bool ModBus::getRegisterValue(int nRegisterIndex, unsigned short &nValue)
     return false;
 }
 
-bool ModBus::getRawRegisterValue(int nRegisterIndex, unsigned char *ptrDataBuff, unsigned nBuffLen)
+bool ModBus::getRawRegistersValue(int nRegisterIndex, unsigned char *ptrDataBuff, unsigned nBuffLen)
 {
     if(NULL == m_ptrDataBuff)
     {
